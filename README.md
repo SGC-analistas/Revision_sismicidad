@@ -36,7 +36,7 @@ source .revision/bin/activate
 pip install -r requirements.txt
 ```
 
-## Mode de uso
+## Instrucciones de uso
 
 ### Forma general
 Con +s se indica la fecha inicial y con +e la fecha final donde se deasea hacer la revisión.
