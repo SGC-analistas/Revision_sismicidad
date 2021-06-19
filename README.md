@@ -15,7 +15,7 @@ Se cuenta como error bajo las siguientes condiciones
 
 ## 1. Instalación en linux
 
-### Requerimientos previos
+### - Requerimientos previos
 Se corre en sistemas linux.
 
 ### - Python
@@ -29,12 +29,32 @@ Tener virtualenv en python.
 python3.7 -m pip install virtualenv
 ```
 
-### Instalación con pip 
+#### Instalación con pip 
 ```bash
 python3.7 -m virtualenv .revision
 source .revision/bin/activate
 pip install -r requirements.txt
 ```
+
+## Mode de uso
+
+### Forma general
+Con +s se indica la fecha inicial y con +e la fecha final donde se deasea hacer la revisión.
+```bash
+python revision.py +s 20210601T000000 +e 20210620T000000
+```
+### Filtrar usuario
+Se añade +u para poner el usuario.
+```bash
+python revision.py +s 20210601T000000 +e 20210620T000000 +u ecastillo
+```
+
+### Guardar en un archivo
+Se añade +o (True o False) donde True es usado para guardar. Se debe añadir "> archivo.txt"
+```bash
+python revision.py +s 20210601T000000 +e 20210620T000000 +u ecastillo +o True > archivo.txt
+```
+
 
 ## Autor
 
