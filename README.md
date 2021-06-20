@@ -7,7 +7,7 @@ Rutina realizada para revisar la sismicidad.
 Se cuenta como error bajo las siguientes condiciones
 ```bash
 1) Errores en latitud,longitud y profundidad > 11.9
-2) Errores en rms
+2) Errores en rms >1.5
 3) Eventos volcánicos no destacados que no tengan not_locatable
 5) Eventos internacionales con M>5 sin asociar
 6) Eventos destacados sin etiqueta de DESTACADO
@@ -39,7 +39,7 @@ pip install -r requirements.txt
 ## Instrucciones de uso
 
 ### Forma general
-Con +s se indica la fecha inicial y con +e la fecha final donde se deasea hacer la revisión.
+Con +s se indica la fecha inicial y con +e la fecha final donde se desea hacer la revisión.
 ```bash
 python revision.py +s 20210601T000000 +e 20210620T000000
 ```

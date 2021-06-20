@@ -198,7 +198,7 @@ def normal_process(df,IDs,IDsen,user=None):
         if user != None:
             if str(ev[9]) == user+"@proc3" or str(ev[9]) == user+"@proc1" or str(ev[9]) == user+"@proc2" or str(ev[9]) == user+"@proc4":
                     if ev[4] != None:
-                            if float(ev[4]) >= 3.0 and ev[10] not in errloc and ev[1] not in suerr:        
+                            if float(ev[4]) >= 1.51 and ev[10] not in errloc and ev[1] not in suerr:        
                                     errms += f"{fe} {ID} {dep}{mag}"+Fore.RED+f"{rms}"+f" {erdep}{erlat}{erlon} {fases}{aut} {tip} {agen}\n"  
                                     suerr.append(ID)
                                     conteo += 1
@@ -263,7 +263,7 @@ def normal_process(df,IDs,IDsen,user=None):
 
         else:
             if ev[4] != None:
-                    if float(ev[4]) >= 3.0 and ev[10] not in errloc and ev[1] not in suerr:        
+                    if float(ev[4]) >= 1.51 and ev[10] not in errloc and ev[1] not in suerr:        
                             errms += f"{fe} {ID} {dep}{mag}"+Fore.RED+f"{rms}"+f" {erdep}{erlat}{erlon} {fases}{aut} {tip} {agen}\n"  
                             suerr.append(ID)
                             conteo += 1
