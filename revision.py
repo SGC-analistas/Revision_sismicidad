@@ -206,7 +206,7 @@ def normal_process(df,IDs,IDsen,user=None):
                                     print(Fore.GREEN+f"{fe}"+Fore.WHITE+f" {ID} {dep}{mag}"+Fore.RED+f"{rms}"+Fore.WHITE+f" {erdep}{erlat}{erlon} {fases}{aut} {tip} {agen}    {comment}   {ubic}") 
 
                             if ev[6] != None and ev[7] != None and ev[5] != None and ev[1] not in suerr and str(ev[10]) not in errloc:
-                                    if float(ev[6]) > 11.9 or float(ev[7]) > 11.9 or float(ev[5]) > 11.9:
+                                    if float(ev[6]) > 12.5 or float(ev[7]) > 12.5 or float(ev[5]) > 12.5:
                                         suerr.append(ID)
                                         conteo += 1
                                         errloc += f"{fe} {ID} {dep}{mag}"+Fore.RED+f"{rms}"+f" {erdep}{erlat}{erlon} {fases}{aut} {tip} {agen}\n"
@@ -270,7 +270,7 @@ def normal_process(df,IDs,IDsen,user=None):
                             comment= "RMS alto".ljust(32," ")
                             print(Fore.GREEN+f"{fe}"+Fore.WHITE+f" {ID} {dep}{mag}"+Fore.RED+f"{rms}"+Fore.WHITE+f" {erdep}{erlat}{erlon} {fases}{aut} {tip} {agen}    {comment}   {ubic}")
                     if ev[6] != None and ev[7] != None and ev[5] != None and ev[1] not in suerr and str(ev[10]) not in errloc:
-                            if float(ev[6]) > 11.9 or float(ev[7]) > 11.9 or float(ev[5]) > 11.9:
+                            if float(ev[6]) > 12.5 or float(ev[7]) > 12.5 or float(ev[5]) > 12.5:
                                 suerr.append(ID)
                                 conteo += 1
                                 errloc += f"{fe} {ID} {dep}{mag}"+Fore.RED+f"{rms}"+f" {erdep}{erlat}{erlon} {fases}{aut} {tip} {agen}\n"
