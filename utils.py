@@ -56,9 +56,13 @@ def inside_bna_polygon(p,bna_folder):
             _polygon_tuple= eval(line)
             polygon_tuple=(float(_polygon_tuple[0]),float(_polygon_tuple[1]))
             V.append(polygon_tuple)
+
+        if inside_the_polygon(p,V):
+            return True
         
-        return inside_the_polygon(p,V)
+    return False
 
 if __name__ == "__main__":
-    a =inside_bna_polygon((-78,3),"/mnt/almacenamiento/Emmanuel_Castillo/git_EDCT/SGC/revision_sismicidad/bna_volcanic_files")
+    a =inside_bna_polygon((-77,1.5),"/home/ecastillo/repositories/revision_sismicidad/bna_volcanic_files")
 
+    print(a)
