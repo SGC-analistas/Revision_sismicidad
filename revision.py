@@ -215,6 +215,7 @@ def normal_process(df,IDs,IDsen,user=None):
 
                             if ev[8] != None and ev[1] not in suerr:
                                 if int(ev[8]) >= 12  and ev[10] in errfa:
+                                    print("aca")
                                     if ut.inside_bna_polygon((longitude,latitude),volcanic_bna_folder) != True:
                                         conteo += 1
                                         errfases += f"{fe} {ID} {dep}{mag}"+Fore.RED+f"{rms}"+f" {erdep}{erlat}{erlon} {fases}{aut} {tip} {agen}\n"
