@@ -63,6 +63,6 @@ def inside_bna_polygon(p,bna_folder):
     return False
 
 if __name__ == "__main__":
-    a =inside_bna_polygon((-75.94,3.02),"/home/ecastillo/repositories/revision_sismicidad/bna_volcanic_files")
+    a =inside_bna_polygon((-76.04,2.91),"/home/ecastillo/repositories/revision_sismicidad/bna_volcanic_files")
 
     print(a)
