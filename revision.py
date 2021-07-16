@@ -131,7 +131,7 @@ def normal_process(df,IDs,IDsen,user=None):
         dataframe obtained by connect2mysql method with mode='normal'.
 
     """
-    volcanic_bna_folder = os.path.join(os.getcwd(),"bna_volcanic_files")
+    volcanic_bna_folder = os.path.join(os.path.dirname(__file__),"bna_volcanic_files")
 
     tit = "Fecha                ID             Depth  Mag   Rms    Erprof Errlat  Errlong  fases Author           Type                   Agency    Observación "
     errms=""
